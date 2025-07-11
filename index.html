@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Data-Driven Creative</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+</head>
+<body data-bs-theme="light">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top shadow bg-white">
+    <div class="container">
+      <a class="navbar-brand text-primary fw-bold" href="#">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item">
+            <button id="toggleTheme" class="btn btn-sm btn-outline-primary ms-3">🌙</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center text-center text-white" id="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Hi, I'm Caleb Tantoh</h1>
+      <p class="lead">Data-Driven Creative</p>
+      <a href="#contact" class="btn btn-warning btn-lg mt-3">Let's Connect</a>
+      <a href="caleb's cv.pdf" download target="-blank"  class="btn btn-warning btn-lg mt-3">Download My CV</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-5" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center">
+          <img src="20250708_100009.jpg" alt="My Photo" class="img-fluid rounded-circle w-75 mb-3" />
+        </div>
+        <div class="col-md-7">
+          <h2>About Me</h2>
+          <p>
+            I'm a visionary builder of digital worlds, crafting innovative 
+            solution with precision and skill. As a software engineering student, 
+            i will constantly pushing the boundaries of what's possible.
+          </p> 
+          <div class="d-flex justify-content-between text-center mt-4">
+            <div>
+              <h3 class="text" data-target="Two months">Two months</h3>
+              <p>Years Experience</p>
+            </div>
+            <div>
+              <h3 class="counter" data-target="2">2</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div>
+               <h3 class="counter" data-target="1">1</h3>
+              <p>Tools Mastered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="bg-light py-5" id="projects">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>My Projects</h2>
+        <div id="filters" class="btn-group mt-3">
+          <button class="btn btn-outline-primary active" data-filter="all">All</button>
+          <button class="btn btn-outline-primary" data-filter="data">Data</button>
+          <button class="btn btn-outline-primary" data-filter="web">Web</button>
+          <button class="btn btn-outline-primary" data-filter="marketing">Marketing</button>
+          <button class="btn btn-outline-primary" data-filter="design">Design</button>
+          <button class="btn btn-outline-primary" data-filter="ai">AI</button>
+        </div>
+      </div>
+      <div class="row g-4" id="projectGrid">
+        <!-- Data Project -->
+        <div class="col-md-6 col-lg-4 data">
+          <div class="card h-100 shadow-sm">
+            <img src="capture 4.PNG" class="card-img-top" alt="Data Analytics Dashboard">
+            <div class="card-body">
+              <h5 class="card-title">Sales Dashboard</h5>
+              <p class="card-text">Interactive dashboard built in Power BI showcasing monthly KPIs and trends.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Project -->
+        <div class="col-md-6 col-lg-4 web">
+          <div class="card h-100 shadow-sm">
+            <img src="" class="card-img-top" alt="Portfolio Website">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio Website</h5>
+              <p class="card-text">Responsive portfolio site built with HTML, CSS, JS & Bootstrap 5.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marketing Project -->
+        <div class="col-md-6 col-lg-4 marketing">
+          <div class="card h-100 shadow-sm">
+            <img src="images/marketing-project.png" class="card-img-top" alt="Marketing Campaign">
+            <div class="card-body">
+              <h5 class="card-title">Instagram Ad Campaign</h5>
+              <p class="card-text">A/B tested ad creatives that led to a 35% increase in user signups.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Project -->
+        <div class="col-md-6 col-lg-4 design">
+          <div class="card h-100 shadow-sm">
+            <img src="capture 2.PNG" class="card-img-top" alt="Brand Identity Design">
+            <div class="card-body">
+              <h5 class="card-title">Brand Identity</h5>
+              <p class="card-text">Complete brand design with logo, color system, and social media kit.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Project -->
+        <div class="col-md-6 col-lg-4 ai">
+          <div class="card h-100 shadow-sm">
+            <img src="capture 3.png" class="card-img-top" alt="AI Chatbot">
+            <div class="card-body">
+              <h5 class="card-title">AI Chatbot</h5>
+              <p class="card-text">Rule-based JavaScript chatbot with natural language fallback logic.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Project -->
+        <div class="col-md-6 col-lg-4 ai">
+          <div class="card h-100 shadow-sm">
+            <img src="capture 3.png" class="card-img-top" alt="AI Chatbot">
+            <div class="card-body">
+              <h5 class="card-title">AI Chatbot</h5>
+              <p class="card-text">Rule-based JavaScript chatbot with natural language fallback logic.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-5" id="services">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2>Services Offered</h2>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-bar-chart fs-1 text-success"></i>
+          <h5 class="mt-3">Data Analytics & Visualization</h5>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-laptop fs-1 text-success"></i>
+          <h5 class="mt-3">Web Development</h5>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-megaphone fs-1 text-success"></i>
+          <h5 class="mt-3">Digital Campaign Strategy</h5>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-camera fs-1 text-success"></i>
+          <h5 class="mt-3">Photography</h5>
+        </div>
+        <div class="col-md-4 mb-4">
+          <i class="bi bi-palette fs-1 text-success"></i>
+          <h5 class="mt-3">Branding & Graphic Design</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-light py-5" id="contact">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2>Contact Me</h2>
+      </div>
+      <form action="https://formspree.io/f/xdkzrgqg" method="POST" class="row g-3">
+        <div class="col-md-6">
+          <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+        </div>
+        <div class="col-md-6">
+          <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+        </div>
+        <div class="col-12">
+          <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- AI Chatbot Placeholder -->
+  <div id="chatbot" class="chatbot shadow">
+    <div class="chatbot-header chatbot-toggle">🤖 Ask Me!</div>
+    <div class="chatbot-body">
+      <!-- JavaScript will populate this -->
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-2">Connect with me:</p>
+      <div class="d-flex justify-content-center gap-3">
+        <a href="https://linkedin.com/in/your-profile" target="_blank" class="text-white text-decoration-none">
+          <i class="bi bi-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/settings/profile" target="_blank" class="text-white text-decoration-none">
+          <i class="bi bi-github"></i> GitHub
+        </a>
+        <a href="mailto:youremail@example.com" class="text-white text-decoration-none">
+          <i class="bi bi-envelope"></i> Email
+        </a>
+        <a href="https://wa.me/1234567890" target="_blank" class="text-white text-decoration-none">
+          <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+      <p class="mt-3 small">&copy; 2025 black scorpion. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
