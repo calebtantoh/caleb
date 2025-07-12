@@ -123,3 +123,11 @@ toggleTheme.addEventListener('click', () => {
   const newTheme = currentTheme === 'light' ? 'dark' : 'light';
   document.body.setAttribute('data-bs-theme', newTheme);
 });
+
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
